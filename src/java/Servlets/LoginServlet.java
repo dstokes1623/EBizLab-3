@@ -39,6 +39,11 @@ public class LoginServlet extends HttpServlet {
             request.setAttribute("errorMessage", "Please enter a Username and Password");  // default action
             url = "/login.jsp";
         }
+        
+        //MOVE TO TIMECARD SERVLET!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        if (option.equals("edit")){
+            url = "/timecard.jsp";
+        }
        try {
            user = Employee.validateLogin(userID, password);
            request.setAttribute("user", user);

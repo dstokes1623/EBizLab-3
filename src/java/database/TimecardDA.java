@@ -27,6 +27,7 @@ public class TimecardDA {
         return timecards;
     }
     public static void addTimecard(Timecard timecard){
+        timecard.setTimecardID(timecards.size());
         timecards.add(timecard);
     }
     public static ArrayList<Timecard> getTimecardsByID(int empID){

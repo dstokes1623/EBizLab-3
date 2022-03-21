@@ -12,10 +12,19 @@ import java.util.Date;
  * @author Dante Stokes
  */
 public class Timecard {
+    private int timecardID;
     private Date date;
     private int employeeID;
     private double hoursWorked;
     private double overtimeHoursWorked;
+
+    public int getTimecardID() {
+        return timecardID;
+    }
+
+    public void setTimecardID(int timecardID) {
+        this.timecardID = timecardID;
+    }
 
     public Date getDate() {
         return date;
